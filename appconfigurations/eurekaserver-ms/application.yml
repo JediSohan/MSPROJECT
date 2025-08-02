@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eurekaServer-ms
+
+
+#logging
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+  level:
+    root: INFO
+
+#common endpoints
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics
+

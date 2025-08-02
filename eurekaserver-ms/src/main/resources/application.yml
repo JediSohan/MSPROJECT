@@ -1,0 +1,12 @@
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+server:
+  port: 6789
+
+
+spring:
+  application:
+    name: MSPROJEC  T_EurekaServer
