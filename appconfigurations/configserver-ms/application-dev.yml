@@ -1,0 +1,13 @@
+pring:
+  application:
+    name: configserver-ms
+  cloud:
+    config:
+      server:
+        git:
+          uri:  ${configuri}
+          default-label: main
+          search-paths:
+            - appconfigurations/{application}
+          username: ${username}
+          password: ${password}
