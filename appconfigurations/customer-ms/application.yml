@@ -8,9 +8,8 @@ spring:
 
 #eureka
 eureka:
-  server:
-    client-url:
-      defaultZone: http://localhost:6789/eureka
+  client:
+    service-url: ${eurekaserverurl}
 
 #logging
 logging:
