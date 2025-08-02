@@ -3,7 +3,3 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: ${dburl}
     password: ${dbpassword}
-
-
-server:
-  port: ${serverport}
