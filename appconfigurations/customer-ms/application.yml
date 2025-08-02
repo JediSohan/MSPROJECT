@@ -2,6 +2,11 @@ spring:
   application:
     name: customer-ms
 
+#eureka
+eureka:
+  server:
+    client-url:
+      defaultZone: http://localhost:6789/eureka
 
 #logging
 logging:
