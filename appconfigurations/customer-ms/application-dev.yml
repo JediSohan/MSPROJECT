@@ -1,5 +1,15 @@
 spring:
-  datasource:
+  application:
+    name: customer-ms
+  config:
+    import: configserver:http://localhost:1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: truedatasource:
     driver-class-name: org.postgresql.Driver
     url: ${dburl}
     username: ${dbuser}
