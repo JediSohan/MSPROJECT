@@ -3,7 +3,7 @@ spring:
     name: customer-ms-dev
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: dburl=jdbc:postgresql://localhost:5432/ms-project-dev
+    url: jdbc:postgresql://localhost:5432/ms-project-dev
     username: ${dbuser}
     password: ${dbpassword}
   jpa:
