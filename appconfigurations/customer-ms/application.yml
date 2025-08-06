@@ -4,7 +4,7 @@
 eureka:
   client:
     serviceURL:
-      defaultZone: http://localhost:6789/eureka
+      defaultZone: http://localhost:6789/eureka/
 
 #logging
 logging:
