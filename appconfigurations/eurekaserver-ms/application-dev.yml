@@ -1,12 +1,17 @@
-spring:
-  application:
-    name: eurekaServer-ms-dev
-
 server:
   port: 6789
 
+spring:
+  application:
+    name: eurekaserver-dev
+
 eureka:
   client:
+    # These two properties correctly tell it not to register itself as a client.
     register-with-eureka: false
     fetch-registry: false
-
+    # --- ADD THIS BLOCK ---
+    # This tells the server where its own endpoint is, which satisfies the
+    # peer-replication mechanism. It will stop trying to connect to localhost:8761.
+    serviceUrl:
+      defaultZone: http://localhost:6789/eureka/
