@@ -1,9 +1,4 @@
 #global properties for all services
-#eureka
-eureka:
-  server:
-    client-url:
-      defaultZone: http://localhost:6789/eureka
 
 #logging
 logging:
